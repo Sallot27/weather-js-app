@@ -16,10 +16,14 @@
             <input type="text" id="latitude" placeholder="Enter latitude...">
             <label for="longitude">Longitude:</label>
             <input type="text" id="longitude" placeholder="Enter longitude...">
-            <button type="button" onclick="getWeather()">Get Weather</button>
+            <button type="button" onclick="getWeatherXMLHTTPRequest()">Get Weather (XMLHTTPRequest)</button>
+            <button type="button" onclick="getWeatherFetchPromises()">Get Weather (Fetch with Promises)</button>
+            <button type="button" onclick="getWeatherFetchAsyncAwait()">Get Weather (Fetch with Async/Await)</button>
         </form>
-        <div class="weather" id="weather">
-            <i class="weather-icon" id="weather-icon"></i>
+        <div class="weather" id="weather"> 
+            <i class="weather-icon" id="weather-icon">
+                <img id="weather-icon-img" src="" alt="Weather Icon">
+            </i>
             <p class="weather-description" id="weather-description"></p>
             <p class="weather-temperature" id="weather-temperature"></p>
         </div>
@@ -28,3 +32,4 @@
 </body>
 
 </html>
+    
